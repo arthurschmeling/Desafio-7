@@ -1,0 +1,25 @@
+package javaapplication110;
+
+import java.util.Scanner;
+
+public class JavaApplication110 {
+
+    public static void main(String[] args) {
+     Scanner ler = new Scanner(System.in);
+     //dados e leitura//
+        System.out.println("insira dois numeros");
+        numeroMenor(ler.nextInt(), ler.nextInt());
+    }
+
+    private static void numeroMenor(int n1, int n2) {
+        if (n1 > n2){
+            System.out.println("o numero menor é: "+n1);
+        }else if (n1 < n2){
+            System.out.println("o numero menor é: "+n2);
+        }else{
+            System.out.println("os numeros sao iguais");
+        }
+            
+        }
+    }
+       
