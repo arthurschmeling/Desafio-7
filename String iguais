@@ -1,0 +1,23 @@
+package javaapplication110;
+
+import java.util.Scanner;
+
+public class JavaApplication110 {
+
+    public static void main(String[] args) {
+      StringIgual();
+    }
+    public static void StringIgual(){
+        Scanner ler = new Scanner(System.in);
+        String txt1, txt2;
+        System.out.println("inira um texto");
+        txt1=ler.nextLine();
+        System.out.println("inira outro texto");
+        txt2=ler.nextLine();
+         if(txt1.equals(txt2)){
+             System.out.println("os textos sao iguais");   
+         }else{
+             System.out.println("os texto sao diferentes");
+         }
+    }
+}
