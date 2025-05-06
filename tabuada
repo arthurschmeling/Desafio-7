@@ -1,0 +1,25 @@
+package javaapplication109;
+
+import java.util.Scanner;
+
+
+public class JavaApplication109 {
+
+    
+    public static void main(String[] args) {
+      Scanner ler= new Scanner(System.in);
+      //dados//
+        System.out.println("insira un numero de 1 a 10");
+        tabuada(ler.nextInt());
+       
+    }
+
+    private static void tabuada(int numero) {
+       int cont;
+       for (cont=1; cont<=10; cont++){
+           System.out.println(numero+"x"+cont+"="+(numero * cont));
+       }
+      
+    }
+    
+}
