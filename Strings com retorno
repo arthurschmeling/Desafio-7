@@ -1,0 +1,26 @@
+package javaapplication110;
+
+import java.util.Scanner;
+
+public class JavaApplication110 {
+
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        //processamento e dados//
+        System.out.println("Insira um texto:");
+        String txt1 = ler.nextLine();
+        System.out.println("Insira outro texto:");
+        String txt2 = ler.nextLine();
+        String resultado = compararNomes(txt1, txt2);
+        System.out.println(resultado);
+    }
+
+ 
+    public static String compararNomes(String nome1, String nome2) {
+        if (nome1.equals(nome2)) {
+            return "Os nomes são iguais";
+        } else {
+            return "Os nomes não são iguais";
+        }
+    }
+}
