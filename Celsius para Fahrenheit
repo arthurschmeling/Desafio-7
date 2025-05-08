@@ -1,0 +1,26 @@
+package javaapplication118;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+
+public class JavaApplication118 {
+
+   
+    public static void main(String[] args) {
+       Scanner ler= new Scanner(System.in);
+        DecimalFormat decimal = new DecimalFormat("0.00");
+        //variaveis//
+        double fahrenheit,celsius;
+        //entrada, processamento e saida de dados//
+        System.out.println("insira uma temperatura em celsius");
+        celsius=ler.nextDouble();
+        fahrenheit= converterCelsiusParaFahrenheit(celsius);
+        System.out.println("fahrenheir: "+ decimal.format(fahrenheit));
+    }
+
+    private static double converterCelsiusParaFahrenheit(double celsius) {
+       return (celsius * 1.8) + 32;
+    }
+    
+}
