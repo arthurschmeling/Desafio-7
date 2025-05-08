@@ -16,8 +16,8 @@ public class JavaApplication110 {
     }
 
  
-    public static String compararNomes(String nome1, String nome2) {
-        if (nome1.equals(nome2)) {
+    public static String compararNomes(String txt1, String txt2) {
+        if (txt2.equalsIgnoreCase(txt2)) {
             return "Os nomes são iguais";
         } else {
             return "Os nomes não são iguais";
