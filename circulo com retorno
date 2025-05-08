@@ -1,0 +1,29 @@
+package javaapplication119;
+
+import java.util.Scanner;
+
+
+public class JavaApplication119 {
+
+
+   
+    public static void main(String[] args) {
+       Scanner ler = new Scanner(System.in);
+       //variaveis//
+       double raio, area;
+       //procesamento e saida de dados
+        System.out.println("Insira o raio a esfera: ");
+        raio = ler.nextDouble();      
+       area = (4.0 / 3) * Math.PI * Math.pow(raio, 3);
+        System.out.println("O area da sua esfera é: " + area);
+        area=areaPI(raio);
+
+    }
+
+    private static double areaPI(double raio) {
+     return  (Math.PI * Math.pow(raio, 2)); 
+
+
+    }
+    
+}
